@@ -1,0 +1,38 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+
+.wrap {
+  width: 1040px;
+}
+
+	$flag-width: 120px;
+
+	#uk-flag,
+	#ger-flag {
+		width: $flag-width;
+		
+	}
+
+	#uk-flag {
+		background-image: url('http://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/120px-Flag_of_the_United_Kingdom.svg.png');
+		height: $flag-width/2;
+		margin-bottom:-5em;
+  		margin-top:1em;
+  		margin-left: 1em;
+	}
+	#ger-flag {
+		background-image: url('http://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/120px-Flag_of_Germany.svg.png');
+		height: ($flag-width/5)*3;
+		margin-bottom: 1em;
+		float: right;
+		margin-right: 1em;
+		margin-top: -5.3em;
+	}
