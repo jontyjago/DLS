@@ -451,7 +451,8 @@ POSTS & CONTENT STYLES
 		.wp-caption {
 			max-width: 100%;
 			background: $green;
-			padding: 5px;
+			padding: 0.4em;
+			margin-bottom: 1em;
 
 			/* images inside wp-caption */
 			img {
