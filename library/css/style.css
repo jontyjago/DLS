@@ -2319,47 +2319,43 @@ you can add resource intensive styles.
     margin: 0.7em 0;
   }
 
-  /* line 42, ../scss/breakpoints/_768up.scss */
-  #uk-flag,
-  #ger-flag {
+  /* line 39, ../scss/breakpoints/_768up.scss */
+  #dorch {
+    background-image: url("../../img/dorchester-60.png");
+    height: 60px;
     width: 60px;
+    margin-bottom: -5em;
+    margin-top: 1em;
+    margin-left: 1em;
   }
 
   /* line 47, ../scss/breakpoints/_768up.scss */
-  #uk-flag {
-    background-image: url("http://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Flag_of_the_United_Kingdom.svg/60px-Flag_of_the_United_Kingdom.svg.png");
-    height: 30px;
-    margin-bottom: -4em;
-    margin-left: 0.5em;
-    margin-top: 0.5em;
-  }
-
-  /* line 55, ../scss/breakpoints/_768up.scss */
-  #ger-flag {
+  #luebb {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Wappen_luebbecke.svg/60px-Wappen_luebbecke.svg.png");
-    height: 36px;
+    height: 76px;
+    width: 60px;
+    margin-bottom: 1em;
     float: right;
-    margin-bottom: 0.5em;
-    margin-right: 0.5em;
-    margin-top: -4.8em;
+    margin-right: 1em;
+    margin-top: -5.8em;
   }
 
   /*********************
   NAVIGATION STYLES
   *********************/
-  /* line 68, ../scss/breakpoints/_768up.scss */
+  /* line 61, ../scss/breakpoints/_768up.scss */
   .nav {
     border: 0;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */
   }
-  /* line 70, ../scss/breakpoints/_768up.scss */
+  /* line 63, ../scss/breakpoints/_768up.scss */
   .nav ul {
     background: #323944;
     margin-top: 0;
   }
-  /* line 74, ../scss/breakpoints/_768up.scss */
+  /* line 67, ../scss/breakpoints/_768up.scss */
   .nav li {
     float: left;
     position: relative;
@@ -2368,7 +2364,7 @@ you can add resource intensive styles.
     */
     /* showing sub-menus */
   }
-  /* line 78, ../scss/breakpoints/_768up.scss */
+  /* line 71, ../scss/breakpoints/_768up.scss */
   .nav li a {
     border-bottom: 0;
     /*
@@ -2376,13 +2372,13 @@ you can add resource intensive styles.
     has the possibility of being a mobile device.
     */
   }
-  /* line 85, ../scss/breakpoints/_768up.scss */
+  /* line 78, ../scss/breakpoints/_768up.scss */
   .nav li a:hover, .nav li a:focus {
     color: #fdfdfd;
     background: #82b661;
     text-decoration: none;
   }
-  /* line 99, ../scss/breakpoints/_768up.scss */
+  /* line 92, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu,
   .nav li ul.children {
     margin-top: 0;
@@ -2394,7 +2390,7 @@ you can add resource intensive styles.
     z-index: 8999;
     /* highlight sub-menu current page */
   }
-  /* line 108, ../scss/breakpoints/_768up.scss */
+  /* line 101, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li,
   .nav li ul.children li {
     /*
@@ -2403,7 +2399,7 @@ you can add resource intensive styles.
     for usability. k, bai.
     */
   }
-  /* line 110, ../scss/breakpoints/_768up.scss */
+  /* line 103, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li a,
   .nav li ul.children li a {
     padding-left: 10px;
@@ -2412,18 +2408,18 @@ you can add resource intensive styles.
     width: 180px;
     border-bottom: 1px dashed #f5f5f1;
   }
-  /* line 127, ../scss/breakpoints/_768up.scss */
+  /* line 120, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li:last-child a,
   .nav li ul.children li:last-child a {
     border-bottom: 0;
   }
-  /* line 137, ../scss/breakpoints/_768up.scss */
+  /* line 130, ../scss/breakpoints/_768up.scss */
   .nav li ul.sub-menu li ul,
   .nav li ul.children li ul {
     top: 0;
     left: 100%;
   }
-  /* line 152, ../scss/breakpoints/_768up.scss */
+  /* line 145, ../scss/breakpoints/_768up.scss */
   .nav li:hover > ul {
     top: auto;
     visibility: visible;
@@ -2433,28 +2429,28 @@ you can add resource intensive styles.
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 172, ../scss/breakpoints/_768up.scss */
+  /* line 165, ../scss/breakpoints/_768up.scss */
   .sidebar {
     margin-top: 2.2em;
   }
 
-  /* line 176, ../scss/breakpoints/_768up.scss */
+  /* line 169, ../scss/breakpoints/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
 
-  /* line 181, ../scss/breakpoints/_768up.scss */
+  /* line 174, ../scss/breakpoints/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0;
   }
-  /* line 186, ../scss/breakpoints/_768up.scss */
+  /* line 179, ../scss/breakpoints/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */
   }
-  /* line 194, ../scss/breakpoints/_768up.scss */
+  /* line 187, ../scss/breakpoints/_768up.scss */
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
@@ -2479,7 +2475,7 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 302, ../scss/breakpoints/_768up.scss */
+  /* line 295, ../scss/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
@@ -2524,9 +2520,9 @@ you can add resource intensive styles.
 
   /* line 24, ../scss/breakpoints/_1030up.scss */
   #luebb {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Wappen_luebbecke.svg/79px-Wappen_luebbecke.svg.png");
-    height: 100px;
-    width: 79px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Wappen_luebbecke.svg/75px-Wappen_luebbecke.svg.png");
+    height: 95px;
+    width: 75px;
     margin-bottom: 1em;
     float: right;
     margin-right: 1em;
