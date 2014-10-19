@@ -50,9 +50,9 @@
 
 
 					<div class='m-all t-all d-all cf'>
-						<div id='uk-flag'></div>
+						<div id='dorch'></div>
 						<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
-						<div id='ger-flag'></div>
+						<div id='luebb'></div>
 					</div>
 
 					<div class='m-all t-all d-all cf'>

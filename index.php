@@ -16,7 +16,7 @@
 						<div class='m-1of2 t-1of3 d-3of7 cf'>
 							<div class='wp-caption'>
 								<img id="love-img" src="<?php echo get_stylesheet_directory_uri() . '/img/love.jpg'; ?>">
-								<p class="wp-caption-text">All You Need Is Love, Mike Carter<br />The sculpture was give to Luebbecke by Mike as a gift from his hometown of Dorchester.</p>
+								<p class="wp-caption-text">All You Need Is Love, Mike Carter<br />The sculpture was given to L&uuml;bbecke by Mike as a gift from his hometown of Dorchester.</p>
 							</div><!-- end caption -->
 						</div>
 
