@@ -46,8 +46,6 @@
 			<header class="header" role="banner">
 
 				<div id="inner-header" class="wrap cf">
-					
-
 
 					<div class='m-all t-all d-all cf'>
 						<div id='dorch'></div>

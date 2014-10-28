@@ -12,7 +12,7 @@ sidebars, comments, ect.
 require_once( 'library/bones.php' );
 
 // USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
-require_once( 'library/functions/custom-post-type.php' );
+//require_once( 'library/functions/custom-post-type.php' );
 
 // For the Site options page
 require_once( 'library/functions/options.php' );

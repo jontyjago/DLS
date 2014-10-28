@@ -32,6 +32,11 @@ function dls_options_page() {
         <p><input type="text" name="intro-title" id="intro-title" size="48" value="<?php esc_attr_e( get_option( 'intro-title' ) ); ?>"/> Homepage Title</p>
         <p><textarea name="intro-text" id="intro-text" cols=36 rows=6><?php esc_attr_e( get_option( 'intro-text' ) ); ?></textarea> Homepage Text - Use &lt;br /&gt; for line breaks.</p>
         
+        <h3>Photo Caption</h3>
+        <p>The text for the All You Need is Love image on the homepage.</p>
+        <p><input type="text" name="photo-caption" id="photo-caption" size="48" value="<?php esc_attr_e( get_option( 'photo-caption' ) ); ?>"/> Photo Caption</p>
+        
+
         <h3>Town Texts</h3>
         <p>These options allow you to customise the text for each of the town descriptions.</p>
         <p><textarea name="dorch-text" id="dorch-text" cols=36 rows=6><?php esc_attr_e( get_option( 'dorch-text' ) ); ?></textarea> Dorchester Text - Use &lt;br /&gt; for line breaks.</p>
@@ -48,6 +53,7 @@ function dls_options_update() {
 	// this is where validation would go
 	update_option( 'intro-title', stripslashes($_POST['intro-title']) );
 	update_option( 'intro-text', stripslashes($_POST['intro-text']) );
+    update_option( 'photo-caption', stripslashes($_POST['photo-caption']) );
     update_option( 'dorch-text', stripslashes($_POST['dorch-text']) );
     update_option( 'luebb-text', stripslashes($_POST['luebb-text']) );
 }

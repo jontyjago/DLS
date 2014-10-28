@@ -16,7 +16,7 @@
 						<div class='m-1of2 t-1of3 d-3of7 cf'>
 							<div class='wp-caption'>
 								<img id="love-img" src="<?php echo get_stylesheet_directory_uri() . '/img/love.jpg'; ?>">
-								<p class="wp-caption-text">All You Need Is Love, Mike Carter<br />The sculpture was given to L&uuml;bbecke by Mike as a gift from his hometown of Dorchester.</p>
+								<p class="wp-caption-text"><?php echo stripslashes(get_option('photo-caption')); ?></p>
 							</div><!-- end caption -->
 						</div>
 
@@ -25,7 +25,9 @@
 							<p><?php echo stripslashes(get_option('dorch-text')); ?></p>
 						<?php	
 
-							$mymap = new Mappress_Map(array("width" => "90%", "center" => array("lat" => 50.7154, "lng" => -2.4367), "zoom" => 12));
+							$mymap = new Mappress_Map(array("width" => "90%", "zoom" => 12));
+							$mypoi = new Mappress_Poi(array("iconid" => "green-dot", "title" => "Dorchester", "point" => array("lat" => 50.7154, "lng" => -2.4367)));
+							$mymap->pois = array($mypoi);
 							echo $mymap->display();
 						?>
 
@@ -35,7 +37,9 @@
 							<p><?php echo stripslashes(get_option('luebb-text')); ?></p>
 						<?php	
 
-							$mymap = new Mappress_Map(array("width" => "90%", "center" => array("lat" => 52.308056, "lng" => 8.623056), "zoom" => 12));
+							$mymap = new Mappress_Map(array("width" => "90%",  "zoom" => 12));
+							$mypoi = new Mappress_Poi(array("iconid" => "green-dot", "title" => "Luebbecke", "point" => array("lat" => 52.308056, "lng" => 8.623056)));
+							$mymap->pois = array($mypoi);
 							echo $mymap->display();
 						?>
 
