@@ -2271,6 +2271,23 @@ tweeners.
   }
 
   /* end .entry-content */
+  /* line 104, ../scss/breakpoints/_481up.scss */
+  .home-news {
+    background: url("../../img/dark-tr.svg") #b7c7de no-repeat;
+    border: 1px #82b661 solid;
+    border-radius: 1em;
+  }
+  /* line 110, ../scss/breakpoints/_481up.scss */
+  .home-news h3 {
+    text-align: left;
+    margin: 0.5em 0;
+    padding: 0 1.5em;
+  }
+  /* line 116, ../scss/breakpoints/_481up.scss */
+  .home-news p {
+    padding: 0 2em;
+  }
+
   /*********************
   FOOTER STYLES
   *********************/
@@ -2321,7 +2338,7 @@ you can add resource intensive styles.
 
   /* line 39, ../scss/breakpoints/_768up.scss */
   #dorch {
-    background-image: url("../../img/dorchester-6.png");
+    background-image: url("../../img/dorchester-60.png");
     height: 60px;
     width: 60px;
     margin-bottom: -5em;

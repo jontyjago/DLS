@@ -20,6 +20,11 @@
 							</div><!-- end caption -->
 						</div>
 
+						<div class='m-all t-all d-all cf home-news'>
+							<h3><?php echo stripslashes(get_option('news_title')); ?></h3>
+							<p><?php echo stripslashes(get_option('news_text')); ?></p>
+						</div>
+
 						<div class="d-1of2 m-all t-1of2 town-box">
 							<h2>Dorchester</h2>
 							<p><?php echo stripslashes(get_option('dorch-text')); ?></p>

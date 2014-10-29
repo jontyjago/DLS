@@ -29,18 +29,30 @@ function dls_options_page() {
         <input type="hidden" name="update_dls_options" value="true" />
         <h3>Homepage Text</h3>
         <p>These options allow you to customise the titles and text at the top of the homepage.</p>
+        <p>Use &lt;br /&gt; for line breaks.</p>
         <p><input type="text" name="intro-title" id="intro-title" size="48" value="<?php esc_attr_e( get_option( 'intro-title' ) ); ?>"/> Homepage Title</p>
-        <p><textarea name="intro-text" id="intro-text" cols=36 rows=6><?php esc_attr_e( get_option( 'intro-text' ) ); ?></textarea> Homepage Text - Use &lt;br /&gt; for line breaks.</p>
+        <p><textarea name="intro-text" id="intro-text" cols=60 rows=6><?php esc_attr_e( get_option( 'intro-text' ) ); ?></textarea></p>
         
         <h3>Photo Caption</h3>
         <p>The text for the All You Need is Love image on the homepage.</p>
-        <p><input type="text" name="photo-caption" id="photo-caption" size="48" value="<?php esc_attr_e( get_option( 'photo-caption' ) ); ?>"/> Photo Caption</p>
+        <p>Use &lt;br /&gt; for line breaks.</p>
+        <p><textarea name="photo-caption" id="photo-caption" cols=60 rows=6><?php esc_attr_e( get_option( 'photo-caption' ) ); ?></textarea></p>
         
 
+        <h3>News Title</h3>
+        <p>The title for the News on the homepage.</p>
+        <p><input type="text" name="news_title" id="news_title" size="48" value="<?php esc_attr_e( get_option( 'news_title' ) ); ?>"/> News Title</p>
+
+        <h3>News</h3>
+        <p>The News text on the homepage.</p>
+        <p>Use &lt;br /&gt; for line breaks.</p>
+        <p><textarea name="news_text" id="news_text" cols=60 rows=6><?php esc_attr_e( get_option( 'news_text' ) ); ?></textarea></p>
+        
         <h3>Town Texts</h3>
         <p>These options allow you to customise the text for each of the town descriptions.</p>
-        <p><textarea name="dorch-text" id="dorch-text" cols=36 rows=6><?php esc_attr_e( get_option( 'dorch-text' ) ); ?></textarea> Dorchester Text - Use &lt;br /&gt; for line breaks.</p>
-        <p><textarea name="luebb-text" id="luebb-text" cols=36 rows=6><?php esc_attr_e( get_option( 'luebb-text' ) ); ?></textarea> Luebbeck Text - Use &lt;br /&gt; for line breaks.</p>
+        <p>Use &lt;br /&gt; for line breaks.</p>
+        <p><textarea name="dorch-text" id="dorch-text" cols=60 rows=6><?php esc_attr_e( get_option( 'dorch-text' ) ); ?></textarea></p>
+        <p><textarea name="luebb-text" id="luebb-text" cols=60 rows=6><?php esc_attr_e( get_option( 'luebb-text' ) ); ?></textarea></p>
 
         <!-- submit button -->
         <p><input type="submit" name="search" value="Update Options" class="button" /></p>
@@ -54,6 +66,8 @@ function dls_options_update() {
 	update_option( 'intro-title', stripslashes($_POST['intro-title']) );
 	update_option( 'intro-text', stripslashes($_POST['intro-text']) );
     update_option( 'photo-caption', stripslashes($_POST['photo-caption']) );
+    update_option( 'news_title', stripslashes($_POST['news_title']) );
+    update_option( 'news_text', stripslashes($_POST['news_text']) );
     update_option( 'dorch-text', stripslashes($_POST['dorch-text']) );
     update_option( 'luebb-text', stripslashes($_POST['luebb-text']) );
 }
