@@ -19,8 +19,8 @@ body {
 	font-family: $lato;
 	font-size: 1.1em;
 	line-height: 1.5;
-	color: $black;
-	background-color: $gray;
+	color: $primarytextcolor;
+	background-color: $white;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -79,11 +79,11 @@ LINK STYLES
 *********************/
 
 a, a:visited {
-	color: $link-color;
+	color: $secondarytextcolor;
 
 	/* on hover */
 	&:hover, &:focus {
-		color: $green;
+		color: $accentcolor;
 		text-decoration: none;
 	}
 
@@ -154,14 +154,14 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $blue;
+	background-color: $primarycolor;
 }
 
 	#logo {
 		margin: 0.75em 0;
 
 		a {
-			color: $white;
+			color: $textprimarycolor;
 		}
 	}
 
@@ -178,7 +178,7 @@ and more scalable.
 */
 
 nav {
-	border-top: 1px solid $green;
+	border-top: 1px solid $dividercolor;
 }
 .nav {
 	border-bottom: 0;
@@ -188,7 +188,7 @@ nav {
 
 		a {
 			display: block;
-			color: $off-white;
+			color: $textprimarycolor;
 			text-decoration: none;
 			padding: 0.75em;
 
@@ -220,11 +220,11 @@ nav {
 
 				a {
 					padding-left: 30px;
-					color: $white;
+					color: $textprimarycolor;
 
 					&:hover,
 					&:focus {
-						color: $off-white;
+						color: $textprimarycolor;
 					}
 
 					&:link {}
@@ -258,7 +258,7 @@ POSTS & CONTENT STYLES
 *********************/
 
 #inner-content {
-	background-color: $off-white;
+	background-color: $textprimarycolor;
 	padding: 0.5em;
 }
 #content {
@@ -269,16 +269,16 @@ POSTS & CONTENT STYLES
 			background-color: $white;
 			border-radius: 3px;
 			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
+			border: 1px solid $dividercolor;
 
 			header {
-				border-bottom: 1px solid $light-gray;
+				border-bottom: 1px solid $dividercolor;
 				padding: 1.5em;
 			}
 
 			footer {
 				padding: 1.5em;
-				border-top: 1px solid $light-gray;
+				border-top: 1px solid $dividercolor;
 
 				p {
 					margin: 0;
@@ -450,9 +450,10 @@ POSTS & CONTENT STYLES
 
 		.wp-caption {
 			max-width: 100%;
-			background: $green;
+			background: $darkprimarycolor;
 			padding: 0.4em;
 			margin-bottom: 1em;
+			border-radius: 0.2em;
 
 			/* images inside wp-caption */
 			img {
@@ -465,7 +466,7 @@ POSTS & CONTENT STYLES
 				font-size: 0.85em;
 				margin: 4px 0 7px;
 				text-align: center;
-				color: $white;
+				color: $textprimarycolor;
 			}
 
 		} /* end .wp-caption */
@@ -502,9 +503,32 @@ POSTS & CONTENT STYLES
 
 #love-img {
 	margin-top: 0.5em;
-	border: 1px solid $black;
-	border-radius: 0.3em;
-}	
+}
+
+.home-news {
+	
+	background: url("../../img/dark-tr.svg") $primarycolor no-repeat;
+	border-radius: 0.5em;
+	color: $textprimarycolor;
+
+	h3 {
+		text-align: left;
+		margin: 0.5em 0;
+		padding: 0 1.5em;
+		color: $primarytextcolor;
+	}
+
+	p {
+		padding: 0 2em;
+	}
+}
+
+article {
+
+	p{
+		color: $secondarytextcolor;
+	}
+}
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -615,7 +639,7 @@ COMMENT STYLES
 	clear: both;
 	overflow: hidden;
 	padding: 1.5em;
-	border-bottom: 1px solid $light-gray;
+	border-bottom: 1px solid $dividercolor;
 
 	.comment-author {
 		padding: 7px;
@@ -869,7 +893,7 @@ SIDEBARS & ASIDES
 		background-color: $white;
 		padding: 1.5em;
 		text-align: center;
-		border: 1px solid $border-color;
+		border: 1px solid $dividercolor;
 		border-radius: 2px;
 		margin-bottom: 1.5em;
 	}
@@ -880,8 +904,8 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-	background-color: $blue;
-	color: $white;
+	background-color: $primarycolor;
+	color: $textprimarycolor;
 	margin-top: 10px;
 }
 

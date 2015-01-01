@@ -76,8 +76,8 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				color: $white;
-				background: $green;
+				color: $textprimarycolor;
+				background: $accentcolor;
 				text-decoration: none;
 			}
 		}
@@ -91,8 +91,8 @@ NAVIGATION STYLES
 		ul.sub-menu,
 		ul.children {
 			margin-top: 0;
-			border: 1px solid $off-white;
-			background: $blue;
+			border: 1px solid $dividercolor;
+			background: $primarycolor;
 			border-top: 0;
 			position: absolute;
 			visibility: hidden;
@@ -105,7 +105,7 @@ NAVIGATION STYLES
 					border-right: 0;
 					display: block;
 					width: 180px;
-					border-bottom: 1px dashed $off-white;
+					border-bottom: 1px dashed $dividercolor;
 
 					&:hover,
 					&:focus {}
@@ -167,7 +167,7 @@ SIDEBARS & ASIDES
 }
 
 	.widgettitle {
-		border-bottom: 2px solid #444;
+		border-bottom: 2px solid $dividercolor;
 		margin-bottom: 0.75em;
 	}
 
